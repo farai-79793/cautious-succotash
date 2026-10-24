@@ -37,10 +37,10 @@ public class CustomerEditor extends VerticalLayout implements KeyNotifier {
 	TextField lastName = new TextField("Last name");
 
 	/* Action buttons */
-	Button save = new Button("Save", VaadinIcon.CHECK.create());
-	Button cancel = new Button("Cancel");
-	Button delete = new Button("Delete", VaadinIcon.TRASH.create());
-	HorizontalLayout actions = new HorizontalLayout(save, cancel, delete);
+Button save = new Button("Add customer", VaadinIcon.CHECK.create());
+Button cancel = new Button("Cancel");
+Button delete = new Button("Delete", VaadinIcon.TRASH.create());
+HorizontalLayout actions = new HorizontalLayout(save, cancel, delete);
 
 	Binder<Customer> binder = new Binder<>(Customer.class);
 	private ChangeHandler changeHandler;
